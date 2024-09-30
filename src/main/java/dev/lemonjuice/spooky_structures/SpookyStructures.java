@@ -12,9 +12,9 @@ import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-@Mod(SpookyStructures.MODID)
+@Mod(SpookyStructures.MOD_ID)
 public class SpookyStructures {
-    public static final String MODID = "spooky_structures";
+    public static final String MOD_ID = "spooky_structures";
 
     public SpookyStructures(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
@@ -31,7 +31,7 @@ public class SpookyStructures {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}
 
-    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {}
