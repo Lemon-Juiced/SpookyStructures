@@ -13,6 +13,9 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = "https://minecraft.curseforge.com/api/maven/"}
+    maven { url = "https://www.cursemaven.com"}
+    maven { url 'https://maven.blamejared.com' }
 }
 
 base {
@@ -74,7 +77,13 @@ configurations {
 }
 
 dependencies {
+    // Scalar Core Dependency
+    compileOnly "curse.maven:scalar_core-1112771:5772236"
+    localRuntime "curse.maven:scalar_core-1112771:5772236"
 
+    // QoL Stuff
+    implementation "curse.maven:jade-324717:5706149" // Jade
+    implementation "curse.maven:jei-238222:5718399" // JEI
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
