@@ -1,6 +1,7 @@
 package dev.lemonjuice.spooky_structures.item;
 
 import dev.lemonjuice.spooky_structures.item.custom.SSTiers;
+import dev.lemonjuice.spooky_structures.item.custom.SilverSmithingTemplateItem;
 import dev.lemonjuice.spooky_structures.item.custom.SilveredSwordItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SwordItem;
@@ -18,7 +19,7 @@ public class SSItems {
     public static final Supplier<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> SILVER_NUGGET = ITEMS.register("silver_nugget", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> RAW_SILVER = ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> SILVER_SMITHING_TEMPLATE = ITEMS.register("silver_smithing_template", () -> new Item(new Item.Properties()));
+    public static final Supplier<SilverSmithingTemplateItem> SILVER_SMITHING_TEMPLATE = ITEMS.register("silver_smithing_template", () -> new SilverSmithingTemplateItem());
 
     // Silvered Swords
     public static final Supplier<Item> SILVERED_WOODEN_SWORD = ITEMS.register("silvered_wooden_sword", () -> new SilveredSwordItem(SSTiers.SILVER_WOOD_TIER, getSwordItemProperties(SSTiers.SILVER_WOOD_TIER)));

@@ -2,6 +2,7 @@ package dev.lemonjuice.spooky_structures;
 
 import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
 import dev.lemonjuice.spooky_structures.item.SSItems;
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -29,13 +30,13 @@ public class SpookyStructures {
         modEventBus.addListener(SSCreativeTab::registerTabs);
 
         NeoForge.EVENT_BUS.register(this);
-
-        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {}
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
+    public static ResourceLocation makeID(String ID) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, ID);
+    }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}
