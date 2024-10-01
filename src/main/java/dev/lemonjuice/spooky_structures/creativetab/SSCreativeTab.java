@@ -24,6 +24,15 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVER_INGOT.get());
             event.accept(SSItems.SILVER_NUGGET.get());
             event.accept(SSItems.RAW_SILVER.get());
+            event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
+
+            event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
+            event.accept(SSItems.SILVERED_STONE_SWORD.get());
+            event.accept(SSItems.SILVERED_IRON_SWORD.get());
+            event.accept(SSItems.SILVERED_DIAMOND_SWORD.get());
+            event.accept(SSItems.SILVERED_GOLDEN_SWORD.get());
+            event.accept(SSItems.SILVERED_NETHERITE_SWORD.get());
+
         }
     }
 

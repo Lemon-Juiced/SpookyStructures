@@ -17,6 +17,7 @@ public class SSItems {
     public static final Supplier<Item> SILVER_INGOT = ITEMS.register("silver_ingot", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> SILVER_NUGGET = ITEMS.register("silver_nugget", () -> new Item(new Item.Properties()));
     public static final Supplier<Item> RAW_SILVER = ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));
+    public static final Supplier<Item> SILVER_SMITHING_TEMPLATE = ITEMS.register("silver_smithing_template", () -> new Item(new Item.Properties()));
 
     // Silvered Swords
     public static final Supplier<Item> SILVERED_WOODEN_SWORD = ITEMS.register("silvered_wooden_sword", () -> new SwordItem(SSTiers.SILVER_WOOD_TIER, getSwordItemProperties(SSTiers.SILVER_WOOD_TIER)));

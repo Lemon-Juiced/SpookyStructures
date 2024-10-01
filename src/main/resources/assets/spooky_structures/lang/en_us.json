@@ -3,5 +3,13 @@
 
   "item.spooky_structures.silver_ingot": "Silver Ingot",
   "item.spooky_structures.silver_nugget": "Silver Nugget",
-  "item.spooky_structures.raw_silver": "Raw Silver"
+  "item.spooky_structures.raw_silver": "Raw Silver",
+  "item.spooky_structures.silver_smithing_template": "Silver Smithing Template",
+
+  "item.spooky_structures.silvered_wooden_sword": "Silvered Wooden Sword",
+  "item.spooky_structures.silvered_stone_sword": "Silvered Stone Sword",
+  "item.spooky_structures.silvered_iron_sword": "Silvered Iron Sword",
+  "item.spooky_structures.silvered_diamond_sword": "Silvered Diamond Sword",
+  "item.spooky_structures.silvered_golden_sword": "Silvered Golden Sword",
+  "item.spooky_structures.silvered_netherite_sword": "Silvered Netherite Sword"
 }
