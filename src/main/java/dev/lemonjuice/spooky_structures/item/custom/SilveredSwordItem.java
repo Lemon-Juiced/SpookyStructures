@@ -37,9 +37,7 @@ public class SilveredSwordItem extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (isUndeadEntity(target)) {
-            target.addEffect(new MobEffectInstance(MobEffects.HEAL, 1, 1));
-        }
+        if (isUndeadEntity(target)) target.setHealth(target.getHealth() - 3.0F);
         return super.hurtEnemy(stack, target, attacker);
     }
 
