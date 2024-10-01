@@ -11,5 +11,12 @@
   "item.spooky_structures.silvered_iron_sword": "Silvered Iron Sword",
   "item.spooky_structures.silvered_diamond_sword": "Silvered Diamond Sword",
   "item.spooky_structures.silvered_golden_sword": "Silvered Golden Sword",
-  "item.spooky_structures.silvered_netherite_sword": "Silvered Netherite Sword"
+  "item.spooky_structures.silvered_netherite_sword": "Silvered Netherite Sword",
+
+  "tooltip.spooky_structures.silvered_sword": "Silvered: Deals extra damage to undead mobs.",
+  "tooltip.spooky_structures.applies_to": "All Swords",
+  "tooltip.spooky_structures.ingredients": "Silver Ingot",
+  "tooltip.spooky_structures.upgrade_description": "Silver Upgrade",
+  "tooltip.spooky_structures.base_slot_description": "Base Slot Description",
+  "tooltip.spooky_structures.additions_slot_description": "Additions Slot Description"
 }

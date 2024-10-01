@@ -1,7 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "minecraft:item/stone_sword",
-    "layer1": "spooky_structures:item/silvered"
+    "layer0": "spooky_structures:item/silvered_stone_sword"
   }
 }
