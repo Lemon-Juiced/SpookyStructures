@@ -1,2 +1,7 @@
 {
+  "itemGroup.spooky_structures.tab": "Spooky Structures",
+
+  "item.spooky_structures.silver_ingot": "Silver Ingot",
+  "item.spooky_structures.silver_nugget": "Silver Nugget",
+  "item.spooky_structures.raw_silver": "Raw Silver"
 }

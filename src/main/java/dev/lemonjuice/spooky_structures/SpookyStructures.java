@@ -1,5 +1,7 @@
 package dev.lemonjuice.spooky_structures;
 
+import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
+import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -18,6 +20,13 @@ public class SpookyStructures {
 
     public SpookyStructures(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
+        // Register Items
+        SSItems.register(modEventBus);
+
+        // Register Creative Tab
+        SSCreativeTab.register(modEventBus);
+        modEventBus.addListener(SSCreativeTab::registerTabs);
 
         NeoForge.EVENT_BUS.register(this);
 
