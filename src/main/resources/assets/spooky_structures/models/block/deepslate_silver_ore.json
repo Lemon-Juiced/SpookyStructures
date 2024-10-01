@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "spooky_structures: blocks/deepslate_silver_ore"
+  }
+}
