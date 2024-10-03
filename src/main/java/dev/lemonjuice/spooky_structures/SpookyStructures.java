@@ -1,5 +1,6 @@
 package dev.lemonjuice.spooky_structures;
 
+import dev.lemonjuice.spooky_structures.block.ModBlocks;
 import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.resources.ResourceLocation;
@@ -24,6 +25,7 @@ public class SpookyStructures {
 
         // Register Items
         SSItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register Creative Tab
         SSCreativeTab.register(modEventBus);

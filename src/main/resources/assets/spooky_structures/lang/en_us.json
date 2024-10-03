@@ -15,6 +15,7 @@
 
 
 
+
   "item.spooky_structures.silvered_wooden_sword": "Silvered Wooden Sword",
   "item.spooky_structures.silvered_stone_sword": "Silvered Stone Sword",
   "item.spooky_structures.silvered_iron_sword": "Silvered Iron Sword",
@@ -27,5 +28,7 @@
   "tooltip.spooky_structures.ingredients": "Silver Ingot",
   "tooltip.spooky_structures.upgrade_description": "Silver Upgrade",
   "tooltip.spooky_structures.base_slot_description": "Base Slot Description",
-  "tooltip.spooky_structures.additions_slot_description": "Additions Slot Description"
+  "tooltip.spooky_structures.additions_slot_description": "Additions Slot Description",
+
+  "block.spooky_structures.flesh_block": "Flesh Block",
 }

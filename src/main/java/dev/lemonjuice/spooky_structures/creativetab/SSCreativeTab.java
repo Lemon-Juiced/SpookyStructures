@@ -1,6 +1,7 @@
 package dev.lemonjuice.spooky_structures.creativetab;
 
 import dev.lemonjuice.scalar_core.ScalarCore;
+import dev.lemonjuice.spooky_structures.block.ModBlocks;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -27,7 +28,7 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
             event.accept(SSItems.ECTOPLASM.get());
             event.accept(SSItems.ECTOPLAM_INFUSED_SILVER_INGOT.get());
-
+            event.accept(ModBlocks.FLESH_BLOCK.get());
 
             event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
             event.accept(SSItems.SILVERED_STONE_SWORD.get());
