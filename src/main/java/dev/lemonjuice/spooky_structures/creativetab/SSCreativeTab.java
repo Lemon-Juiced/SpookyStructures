@@ -27,6 +27,10 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
             event.accept(SSItems.ECTOPLASM.get());
             event.accept(SSItems.ECTOPLAM_INFUSED_SILVER_INGOT.get());
+            event.accept(SSItems.ECTOPLASM_HELMET.get());
+            event.accept(SSItems.ECTOPLASM_CHESTPLATE.get());
+            event.accept(SSItems.ECTOPLASM_LEGGINGS.get());
+            event.accept(SSItems.ECTOPLASM_BOOTS.get());
 
             event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
             event.accept(SSItems.SILVERED_STONE_SWORD.get());
