@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "spooky_structures:ectoplasm_infused_silver_ingot"
+    }
+  },
+  "result": {
+    "id": "spooky_structures:ectoplasm_leggings",
+    "count": 1
+  }
+}
