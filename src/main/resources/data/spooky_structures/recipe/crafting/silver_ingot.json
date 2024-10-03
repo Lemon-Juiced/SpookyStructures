@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:silver_nugget"
+    }
+  },
+  "result": {
+    "id": "spooky_structures:silver_ingot",
+    "count": 1
+  }
+}
