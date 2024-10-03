@@ -25,6 +25,8 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVER_NUGGET.get());
             event.accept(SSItems.RAW_SILVER.get());
             event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
+            event.accept(SSItems.ECTOPLASM.get());
+            event.accept(SSItems.ECTOPLAM_INFUSED_SILVER_INGOT.get());
 
             event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
             event.accept(SSItems.SILVERED_STONE_SWORD.get());
