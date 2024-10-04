@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static dev.lemonjuice.scalar_core.item.ToolItemPropFactory.getNonBurningSwordItemProperties;
 import static dev.lemonjuice.scalar_core.item.ToolItemPropFactory.getSwordItemProperties;
 import static dev.lemonjuice.spooky_structures.SpookyStructures.MOD_ID;
 
@@ -28,7 +29,7 @@ public class SSItems {
     public static final Supplier<Item> SILVERED_IRON_SWORD = ITEMS.register("silvered_iron_sword", () -> new SilveredSwordItem(SSTiers.SILVER_IRON_TIER, getSwordItemProperties(SSTiers.SILVER_IRON_TIER)));
     public static final Supplier<Item> SILVERED_DIAMOND_SWORD = ITEMS.register("silvered_diamond_sword", () -> new SilveredSwordItem(SSTiers.SILVER_DIAMOND_TIER, getSwordItemProperties(SSTiers.SILVER_DIAMOND_TIER)));
     public static final Supplier<Item> SILVERED_GOLDEN_SWORD = ITEMS.register("silvered_golden_sword", () -> new SilveredSwordItem(SSTiers.SILVER_GOLD_TIER, getSwordItemProperties(SSTiers.SILVER_GOLD_TIER)));
-    public static final Supplier<Item> SILVERED_NETHERITE_SWORD = ITEMS.register("silvered_netherite_sword", () -> new SilveredSwordItem(SSTiers.SILVER_NETHERITE_TIER, getSwordItemProperties(SSTiers.SILVER_NETHERITE_TIER)));
+    public static final Supplier<Item> SILVERED_NETHERITE_SWORD = ITEMS.register("silvered_netherite_sword", () -> new SilveredSwordItem(SSTiers.SILVER_NETHERITE_TIER, getNonBurningSwordItemProperties(SSTiers.SILVER_NETHERITE_TIER)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
