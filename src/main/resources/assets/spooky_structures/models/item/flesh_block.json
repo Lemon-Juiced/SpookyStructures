@@ -1,6 +1,3 @@
 {
-  "parent": "spooky_structures:block/flesh_block",
-  "textures": {
-    "all": "spooky_structures:block/flesh_block"
-  }
+  "parent": "spooky_structures:block/flesh_block"
 }

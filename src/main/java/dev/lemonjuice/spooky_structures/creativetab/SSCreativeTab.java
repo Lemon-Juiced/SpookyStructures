@@ -1,7 +1,7 @@
 package dev.lemonjuice.spooky_structures.creativetab;
 
 import dev.lemonjuice.scalar_core.ScalarCore;
-import dev.lemonjuice.spooky_structures.block.ModBlocks;
+import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -27,8 +27,7 @@ public class SSCreativeTab {
             event.accept(SSItems.RAW_SILVER.get());
             event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
             event.accept(SSItems.ECTOPLASM.get());
-            event.accept(SSItems.ECTOPLAM_INFUSED_SILVER_INGOT.get());
-            event.accept(ModBlocks.FLESH_BLOCK.get());
+            event.accept(SSItems.ECTOPLASM_INFUSED_SILVER_INGOT.get());
 
             event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
             event.accept(SSItems.SILVERED_STONE_SWORD.get());
@@ -36,6 +35,12 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVERED_DIAMOND_SWORD.get());
             event.accept(SSItems.SILVERED_GOLDEN_SWORD.get());
             event.accept(SSItems.SILVERED_NETHERITE_SWORD.get());
+
+            event.accept(SSBlocks.FLESH_BLOCK.get().asItem());
+            event.accept(SSBlocks.SILVER_BLOCK.get().asItem());
+            event.accept(SSBlocks.RAW_SILVER_BLOCK.get().asItem());
+            event.accept(SSBlocks.SILVER_ORE.get().asItem());
+            event.accept(SSBlocks.DEEPSLATE_SILVER_ORE.get().asItem());
 
         }
     }

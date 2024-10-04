@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "spooky_structures:block/flesh_block"
+    "all": "spooky_structures:block/raw_silver_block"
   }
 }

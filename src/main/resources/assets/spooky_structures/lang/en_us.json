@@ -12,10 +12,6 @@
   "item.spooky_structures.ectoplasm_leggings": "Ectoplasm Leggings",
   "item.spooky_structures.ectoplasm_boots": "Ectoplasm Boots",
 
-
-
-
-
   "item.spooky_structures.silvered_wooden_sword": "Silvered Wooden Sword",
   "item.spooky_structures.silvered_stone_sword": "Silvered Stone Sword",
   "item.spooky_structures.silvered_iron_sword": "Silvered Iron Sword",
@@ -30,5 +26,9 @@
   "tooltip.spooky_structures.base_slot_description": "Base Slot Description",
   "tooltip.spooky_structures.additions_slot_description": "Additions Slot Description",
 
-  "block.spooky_structures.flesh_block": "Flesh Block",
+  "block.spooky_structures.flesh_block": "Block of Flesh",
+  "block.spooky_structures.silver_block": "Block of Silver",
+  "block.spooky_structures.raw_silver_block": "Block of Raw Silver",
+  "block.spooky_structures.silver_ore": "Silver Ore",
+  "block.spooky_structures.deepslate_silver_ore": "Deepslate Silver Ore"
 }

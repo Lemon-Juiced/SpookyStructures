@@ -1,6 +1,6 @@
 package dev.lemonjuice.spooky_structures;
 
-import dev.lemonjuice.spooky_structures.block.ModBlocks;
+import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.resources.ResourceLocation;
@@ -13,7 +13,6 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 @Mod(SpookyStructures.MOD_ID)
@@ -25,7 +24,7 @@ public class SpookyStructures {
 
         // Register Items
         SSItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        SSBlocks.register(modEventBus);
 
         // Register Creative Tab
         SSCreativeTab.register(modEventBus);

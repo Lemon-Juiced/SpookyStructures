@@ -4,7 +4,6 @@ import dev.lemonjuice.spooky_structures.item.custom.SSTiers;
 import dev.lemonjuice.spooky_structures.item.custom.SilverSmithingTemplateItem;
 import dev.lemonjuice.spooky_structures.item.custom.SilveredSwordItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -21,8 +20,7 @@ public class SSItems {
     public static final Supplier<Item> RAW_SILVER = ITEMS.register("raw_silver", () -> new Item(new Item.Properties()));
     public static final Supplier<SilverSmithingTemplateItem> SILVER_SMITHING_TEMPLATE = ITEMS.register("silver_smithing_template", () -> new SilverSmithingTemplateItem());
     public static final Supplier<Item> ECTOPLASM = ITEMS.register("ectoplasm", () -> new Item(new Item.Properties()));
-    public static final Supplier<Item> ECTOPLAM_INFUSED_SILVER_INGOT = ITEMS.register("ectoplasm_infused_silver_ingot", () -> new Item(new Item.Properties()));
-
+    public static final Supplier<Item> ECTOPLASM_INFUSED_SILVER_INGOT = ITEMS.register("ectoplasm_infused_silver_ingot", () -> new Item(new Item.Properties()));
 
     // Silvered Swords
     public static final Supplier<Item> SILVERED_WOODEN_SWORD = ITEMS.register("silvered_wooden_sword", () -> new SilveredSwordItem(SSTiers.SILVER_WOOD_TIER, getSwordItemProperties(SSTiers.SILVER_WOOD_TIER)));
@@ -31,7 +29,6 @@ public class SSItems {
     public static final Supplier<Item> SILVERED_DIAMOND_SWORD = ITEMS.register("silvered_diamond_sword", () -> new SilveredSwordItem(SSTiers.SILVER_DIAMOND_TIER, getSwordItemProperties(SSTiers.SILVER_DIAMOND_TIER)));
     public static final Supplier<Item> SILVERED_GOLDEN_SWORD = ITEMS.register("silvered_golden_sword", () -> new SilveredSwordItem(SSTiers.SILVER_GOLD_TIER, getSwordItemProperties(SSTiers.SILVER_GOLD_TIER)));
     public static final Supplier<Item> SILVERED_NETHERITE_SWORD = ITEMS.register("silvered_netherite_sword", () -> new SilveredSwordItem(SSTiers.SILVER_NETHERITE_TIER, getSwordItemProperties(SSTiers.SILVER_NETHERITE_TIER)));
-
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
