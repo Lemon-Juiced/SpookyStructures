@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing_trim",
+  "type": "minecraft:smithing_transform",
   "template": {
     "item": "spooky_structures:silver_smithing_template"
   },

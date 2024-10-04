@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "c:ores/silver"
+  },
+  "result": {
+    "id": "spooky_structures:silver_ingot"
+  },
+  "experience": 0.1,
+  "cooking_time": 200
+}

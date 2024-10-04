@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "spooky_structures:silver_ingot"
+      "tag": "c:storage_blocks/raw_silver"
     }
   ],
   "result": {
-    "id": "spooky_structures:silver_nugget",
+    "id": "spooky_structures:raw_silver",
     "count": 9
   }
 }

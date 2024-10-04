@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "ingredient": {
-    "item": "spooky_structures:raw_silver"
+    "tag": "c:ores/silver"
   },
   "result": {
     "id": "spooky_structures:silver_ingot"
   },
   "experience": 0.1,
-  "cooking_time": 200
+  "cooking_time": 100
 }

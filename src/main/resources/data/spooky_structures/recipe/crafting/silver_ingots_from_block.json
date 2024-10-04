@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "spooky_structures:flesh_block"
+      "tag": "c:storage_blocks/silver"
     }
   ],
   "result": {
-    "id": "minecraft:rotten_flesh",
-    "count": 4
+    "id": "spooky_structures:silver_ingot",
+    "count": 9
   }
 }
