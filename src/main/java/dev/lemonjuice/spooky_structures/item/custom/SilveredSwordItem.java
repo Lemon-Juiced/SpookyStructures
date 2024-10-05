@@ -1,27 +1,18 @@
 package dev.lemonjuice.spooky_structures.item.custom;
 
+import dev.lemonjuice.scalar_core.item.ExtraDamageCategorySwordItem;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.TooltipFlag;
 
 import java.util.List;
 
-import static dev.lemonjuice.scalar_core.category.Category.isUndeadEntity;
-
-public class SilveredSwordItem extends SwordItem {
+public class SilveredSwordItem extends ExtraDamageCategorySwordItem {
 
     public SilveredSwordItem(Tier tier, Properties properties) {
-        super(tier, properties);
-    }
-
-    @Override
-    public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        if (isUndeadEntity(target)) target.setHealth(target.getHealth() - 3.0F);
-        return super.hurtEnemy(stack, target, attacker);
+        super(tier, properties, "undead", 3.0F);
     }
 
     @Override

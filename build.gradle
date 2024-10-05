@@ -78,8 +78,8 @@ configurations {
 
 dependencies {
     // Scalar Core Dependency
-    compileOnly "curse.maven:scalar_core-1112771:5781572"
-    localRuntime "curse.maven:scalar_core-1112771:5781572"
+    compileOnly "curse.maven:scalar_core-1112771:5786698"
+    localRuntime "curse.maven:scalar_core-1112771:5786698"
 
     // QoL Stuff
     implementation "curse.maven:jade-324717:5706149" // Jade
