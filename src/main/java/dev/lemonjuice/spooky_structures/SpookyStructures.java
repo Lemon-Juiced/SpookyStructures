@@ -2,6 +2,7 @@ package dev.lemonjuice.spooky_structures;
 
 import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
+import dev.lemonjuice.spooky_structures.handler.MobDropHandler;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
@@ -33,7 +34,9 @@ public class SpookyStructures {
         NeoForge.EVENT_BUS.register(this);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {}
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        NeoForge.EVENT_BUS.register(new MobDropHandler());
+    }
 
     public static ResourceLocation makeID(String ID) {
         return ResourceLocation.fromNamespaceAndPath(MOD_ID, ID);
