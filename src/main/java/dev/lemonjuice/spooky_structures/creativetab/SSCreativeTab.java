@@ -46,8 +46,6 @@ public class SSCreativeTab {
             event.accept(SSBlocks.RAW_SILVER_BLOCK.get().asItem());
             event.accept(SSBlocks.SILVER_ORE.get().asItem());
             event.accept(SSBlocks.DEEPSLATE_SILVER_ORE.get().asItem());
-
-
         }
     }
 

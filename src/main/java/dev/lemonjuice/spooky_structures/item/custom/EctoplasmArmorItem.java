@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 public class EctoplasmArmorItem extends ArmorItem {
-    private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP = (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>()).put(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, List.of(new MobEffectInstance(MobEffects.INVISIBILITY, 100, 1, false, false))).build();
+    private static final Map<Holder<ArmorMaterial>, List<MobEffectInstance>> MATERIAL_TO_EFFECT_MAP = (new ImmutableMap.Builder<Holder<ArmorMaterial>, List<MobEffectInstance>>()).put(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, List.of(new MobEffectInstance(MobEffects.INVISIBILITY, MobEffectInstance.INFINITE_DURATION, 0, false, false))).build();
 
     public EctoplasmArmorItem(Holder<ArmorMaterial> material, Type type, Properties properties) {
         super(material, type, properties);
@@ -26,6 +26,7 @@ public class EctoplasmArmorItem extends ArmorItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         if (entity instanceof Player player && !level.isClientSide() && hasFullSuitOfArmorOn(player)) evaluateArmorEffects(player);
+        else if (entity instanceof Player player && !level.isClientSide() && !hasFullSuitOfArmorOn(player)) removeArmorEffects(player);
     }
 
     private void evaluateArmorEffects(Player player) {
@@ -35,6 +36,12 @@ public class EctoplasmArmorItem extends ArmorItem {
 
             if (hasPlayerCorrectArmorOn(mapArmorMaterial, player)) addEffectToPlayer(player, mapEffect);
         }
+    }
+
+    private void removeArmorEffects(Player player) {
+        for (List<MobEffectInstance> mapEffect : MATERIAL_TO_EFFECT_MAP.values())
+            for (MobEffectInstance effect : mapEffect)
+                if (player.hasEffect(effect.getEffect())) player.removeEffect(effect.getEffect());
     }
 
     private void addEffectToPlayer(Player player, List<MobEffectInstance> mapEffect) {
