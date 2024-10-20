@@ -1,8 +1,7 @@
 package dev.lemonjuice.spooky_structures.item;
 
-import dev.lemonjuice.spooky_structures.item.custom.SSTiers;
-import dev.lemonjuice.spooky_structures.item.custom.SilverSmithingTemplateItem;
-import dev.lemonjuice.spooky_structures.item.custom.SilveredSwordItem;
+import dev.lemonjuice.spooky_structures.item.custom.*;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -30,6 +29,12 @@ public class SSItems {
     public static final Supplier<Item> SILVERED_DIAMOND_SWORD = ITEMS.register("silvered_diamond_sword", () -> new SilveredSwordItem(SSTiers.SILVER_DIAMOND_TIER, getSwordItemProperties(SSTiers.SILVER_DIAMOND_TIER)));
     public static final Supplier<Item> SILVERED_GOLDEN_SWORD = ITEMS.register("silvered_golden_sword", () -> new SilveredSwordItem(SSTiers.SILVER_GOLD_TIER, getSwordItemProperties(SSTiers.SILVER_GOLD_TIER)));
     public static final Supplier<Item> SILVERED_NETHERITE_SWORD = ITEMS.register("silvered_netherite_sword", () -> new SilveredSwordItem(SSTiers.SILVER_NETHERITE_TIER, getNonBurningSwordItemProperties(SSTiers.SILVER_NETHERITE_TIER)));
+
+    // Ectoplasm Armor
+    public static final Supplier<ArmorItem> ECTOPLASM_HELMET = ITEMS.register("ectoplasm_helmet", () -> new EctoplasmArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(33))));
+    public static final Supplier<ArmorItem> ECTOPLASM_CHESTPLATE = ITEMS.register("ectoplasm_chestplate", () -> new ArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(33))));
+    public static final Supplier<ArmorItem> ECTOPLASM_LEGGINGS = ITEMS.register("ectoplasm_leggings", () -> new ArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(33))));
+    public static final Supplier<ArmorItem> ECTOPLASM_BOOTS = ITEMS.register("ectoplasm_boots", () -> new ArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(33))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

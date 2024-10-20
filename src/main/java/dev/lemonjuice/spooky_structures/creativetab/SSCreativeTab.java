@@ -36,11 +36,17 @@ public class SSCreativeTab {
             event.accept(SSItems.SILVERED_GOLDEN_SWORD.get());
             event.accept(SSItems.SILVERED_NETHERITE_SWORD.get());
 
+            event.accept(SSItems.ECTOPLASM_HELMET.get());
+            event.accept(SSItems.ECTOPLASM_CHESTPLATE.get());
+            event.accept(SSItems.ECTOPLASM_LEGGINGS.get());
+            event.accept(SSItems.ECTOPLASM_BOOTS.get());
+
             event.accept(SSBlocks.FLESH_BLOCK.get().asItem());
             event.accept(SSBlocks.SILVER_BLOCK.get().asItem());
             event.accept(SSBlocks.RAW_SILVER_BLOCK.get().asItem());
             event.accept(SSBlocks.SILVER_ORE.get().asItem());
             event.accept(SSBlocks.DEEPSLATE_SILVER_ORE.get().asItem());
+
 
         }
     }
