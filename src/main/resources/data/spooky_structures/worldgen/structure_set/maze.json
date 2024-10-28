@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "spooky_structures:maze",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 429000,
+    "spacing": 48,
+    "separation": 20
+  }
+}
