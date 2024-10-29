@@ -31,6 +31,7 @@ public class SpookyStructures {
         SSCreativeTab.register(modEventBus);
         modEventBus.addListener(SSCreativeTab::registerTabs);
 
+
         NeoForge.EVENT_BUS.register(this);
     }
 

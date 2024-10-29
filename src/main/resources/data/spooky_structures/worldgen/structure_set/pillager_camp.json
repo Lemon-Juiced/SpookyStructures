@@ -1,12 +1,12 @@
 {
   "structures": [
     {
-      "structure": "spooky_structures:maze",
+      "structure": "spooky_structures:pillager_camp",
       "weight": 1
     }
   ],
   "placement": {
-    "salt": 1642136474,
+    "salt": 1642136475,
     "spacing": 50,
     "separation": 20,
     "type": "minecraft:random_spread"

@@ -1,11 +1,11 @@
 {
-  "name": "spooky_structures:maze/start_pool",
+  "name": "spooky_structures:pillager_camp/start_pool",
   "fallback": "minecraft:empty",
   "elements": [
     {
       "weight": 1,
       "element": {
-        "location": "spooky_structures:maze",
+        "location": "spooky_structures:pillager_camp",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
