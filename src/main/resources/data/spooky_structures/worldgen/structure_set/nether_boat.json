@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "spooky_structures:nether_boat",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1163000,
+    "spacing": 32,
+    "separation": 8
+  }
+}
