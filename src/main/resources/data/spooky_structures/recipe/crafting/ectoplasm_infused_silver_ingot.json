@@ -1,16 +1,13 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "pattern": [
-    "!#"
-  ],
-  "key": {
-    "#": {
+  "ingredients": [
+    {
       "item": "spooky_structures:silver_ingot"
     },
-    "!": {
+    {
       "item": "spooky_structures:ectoplasm"
     }
-  },
+  ],
   "result": {
     "id": "spooky_structures:ectoplasm_infused_silver_ingot",
     "count": 1
