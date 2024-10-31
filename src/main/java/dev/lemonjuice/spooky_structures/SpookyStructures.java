@@ -4,6 +4,7 @@ import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.creativetab.SSCreativeTab;
 import dev.lemonjuice.spooky_structures.handler.MobDropHandler;
 import dev.lemonjuice.spooky_structures.item.SSItems;
+import dev.lemonjuice.spooky_structures.loot.SSLootModifiers;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
@@ -31,6 +32,8 @@ public class SpookyStructures {
         SSCreativeTab.register(modEventBus);
         modEventBus.addListener(SSCreativeTab::registerTabs);
 
+        // Register Loot Modifiers
+        SSLootModifiers.LOOT_MODIFIERS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
     }
