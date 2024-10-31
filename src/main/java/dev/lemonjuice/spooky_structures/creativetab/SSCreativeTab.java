@@ -41,6 +41,8 @@ public class SSCreativeTab {
             event.accept(SSItems.ECTOPLASM_LEGGINGS.get());
             event.accept(SSItems.ECTOPLASM_BOOTS.get());
 
+            event.accept(SSItems.SPOOKY_JAM.get());
+
             event.accept(SSBlocks.FLESH_BLOCK.get().asItem());
             event.accept(SSBlocks.SILVER_BLOCK.get().asItem());
             event.accept(SSBlocks.RAW_SILVER_BLOCK.get().asItem());

@@ -36,6 +36,9 @@ public class SSItems {
     public static final Supplier<ArmorItem> ECTOPLASM_LEGGINGS = ITEMS.register("ectoplasm_leggings", () -> new ArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(33))));
     public static final Supplier<ArmorItem> ECTOPLASM_BOOTS = ITEMS.register("ectoplasm_boots", () -> new ArmorItem(SSArmorMaterials.ECTOPLASM_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(33))));
 
+    // Spooky Jam 2.0
+    public static final Supplier<Item> SPOOKY_JAM = ITEMS.register("spooky_jam", () -> new SpookyJamItem(new Item.Properties().stacksTo(1)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
