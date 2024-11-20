@@ -7,7 +7,7 @@
       "element": {
         "location": "spooky_structures:maze",
         "processors": "minecraft:empty",
-        "projection": "rigid",
+        "projection": "terrain_matching",
         "element_type": "minecraft:single_pool_element"
       }
     }
