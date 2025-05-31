@@ -24,7 +24,7 @@ public class SpookyStructures {
     public SpookyStructures(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
-        // Register Items
+        // Register Items & Blocks
         SSItems.register(modEventBus);
         SSBlocks.register(modEventBus);
 

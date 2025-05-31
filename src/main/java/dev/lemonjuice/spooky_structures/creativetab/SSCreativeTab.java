@@ -1,6 +1,7 @@
 package dev.lemonjuice.spooky_structures.creativetab;
 
 import dev.lemonjuice.scalar_core.ScalarCore;
+import dev.lemonjuice.spooky_structures.SpookyStructures;
 import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.item.SSItems;
 import net.minecraft.core.registries.Registries;
@@ -13,7 +14,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class SSCreativeTab {
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ScalarCore.MOD_ID);
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SpookyStructures.MOD_ID);
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SS_ITEMS_TAB = CREATIVE_MODE_TABS.register("spooky_structures_items", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.spooky_structures.tab"))
