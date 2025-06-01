@@ -28,4 +28,4 @@ Spooky Structures adds spooky structures to Minecraft for SpookyJam 2024.
     - Dedicated tab for Spooky Structures items and blocks.
 
 ## Dependencies
-- [Scalar Core}(https://github.com/Lemon-Juiced/ScalarCore)
+- [Scalar Core](https://github.com/Lemon-Juiced/ScalarCore)
