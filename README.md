@@ -1,5 +1,6 @@
 # Spooky Structures
-Spooky Structures adds spooky structures to Minecraft for SpookyJam 2024.
+Spooky Structures adds spooky structures to Minecraft for SpookyJam 2024.  
+Originally also housed all the content in [Spooky Silver](https://github.com/Lemon-Juiced/SpookySilver), however they were ultimately split for the health of both projects. 
 
 ## Features
 - **Structures**:
@@ -8,24 +9,21 @@ Spooky Structures adds spooky structures to Minecraft for SpookyJam 2024.
     - Pillager Camp
 
 - **Items**:
-    - Silver Ingot, Silver Nugget, Raw Silver
     - Ectoplasm and Ectoplasm-Infused Silver Ingot
-    - Silver Smithing Template
     - Spooky Jam
-
-- **Weapons**:
-    - Silvered Swords (Wooden, Stone, Iron, Diamond, Golden, Netherite)
 
 - **Armor**:
     - Ectoplasm Helmet, Chestplate, Leggings, Boots
 
 - **Blocks**:
     - Flesh Block
-    - Silver Block, Raw Silver Block
-    - Silver Ore, Deepslate Silver Ore
 
 - **Creative Tab**:
     - Dedicated tab for Spooky Structures items and blocks.
 
 ## Dependencies
+### Required Dependencies
 - [Scalar Core](https://github.com/Lemon-Juiced/ScalarCore)
+
+### Optional Dependencies
+- [Spooky Silver](https://github.com/Lemon-Juiced/SpookySilver) ***OR*** *Another Mod That Adds Silver.*

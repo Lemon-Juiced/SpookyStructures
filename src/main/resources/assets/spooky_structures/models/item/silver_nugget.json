@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "spooky_structures:item/silver_nugget"
-  }
-}

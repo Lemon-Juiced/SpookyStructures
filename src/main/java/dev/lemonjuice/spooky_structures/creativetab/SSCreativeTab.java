@@ -1,6 +1,5 @@
 package dev.lemonjuice.spooky_structures.creativetab;
 
-import dev.lemonjuice.scalar_core.ScalarCore;
 import dev.lemonjuice.spooky_structures.SpookyStructures;
 import dev.lemonjuice.spooky_structures.block.SSBlocks;
 import dev.lemonjuice.spooky_structures.item.SSItems;
@@ -18,24 +17,13 @@ public class SSCreativeTab {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> SS_ITEMS_TAB = CREATIVE_MODE_TABS.register("spooky_structures_items", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.spooky_structures.tab"))
-            .icon(() -> new ItemStack(SSItems.SILVER_INGOT.get()))
+            .icon(() -> new ItemStack(SSItems.ECTOPLASM_INFUSED_SILVER_INGOT.get()))
             .build());
 
     public static void registerTabs(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == SS_ITEMS_TAB.get()) {
-            event.accept(SSItems.SILVER_INGOT.get());
-            event.accept(SSItems.SILVER_NUGGET.get());
-            event.accept(SSItems.RAW_SILVER.get());
-            event.accept(SSItems.SILVER_SMITHING_TEMPLATE.get());
             event.accept(SSItems.ECTOPLASM.get());
             event.accept(SSItems.ECTOPLASM_INFUSED_SILVER_INGOT.get());
-
-            event.accept(SSItems.SILVERED_WOODEN_SWORD.get());
-            event.accept(SSItems.SILVERED_STONE_SWORD.get());
-            event.accept(SSItems.SILVERED_IRON_SWORD.get());
-            event.accept(SSItems.SILVERED_DIAMOND_SWORD.get());
-            event.accept(SSItems.SILVERED_GOLDEN_SWORD.get());
-            event.accept(SSItems.SILVERED_NETHERITE_SWORD.get());
 
             event.accept(SSItems.ECTOPLASM_HELMET.get());
             event.accept(SSItems.ECTOPLASM_CHESTPLATE.get());
@@ -45,10 +33,6 @@ public class SSCreativeTab {
             event.accept(SSItems.SPOOKY_JAM.get());
 
             event.accept(SSBlocks.FLESH_BLOCK.get().asItem());
-            event.accept(SSBlocks.SILVER_BLOCK.get().asItem());
-            event.accept(SSBlocks.RAW_SILVER_BLOCK.get().asItem());
-            event.accept(SSBlocks.SILVER_ORE.get().asItem());
-            event.accept(SSBlocks.DEEPSLATE_SILVER_ORE.get().asItem());
         }
     }
 

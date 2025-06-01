@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "spooky_structures:silver_ingot"
+      "tag": "c:ingots/silver"
     },
     {
       "item": "spooky_structures:ectoplasm"

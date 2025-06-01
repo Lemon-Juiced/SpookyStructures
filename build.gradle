@@ -81,6 +81,10 @@ dependencies {
     compileOnly "curse.maven:scalar_core-1112771:6603185"
     localRuntime "curse.maven:scalar_core-1112771:6603185"
 
+    // Optional Spooky Silver Dependency
+    compileOnly "curse.maven:spooky_silver-1277858:6603736"
+    localRuntime "curse.maven:spooky_silver-1277858:6603736"
+
     // QoL Stuff
     implementation "curse.maven:jade-324717:5706149" // Jade
     implementation "curse.maven:jei-238222:5718399" // JEI

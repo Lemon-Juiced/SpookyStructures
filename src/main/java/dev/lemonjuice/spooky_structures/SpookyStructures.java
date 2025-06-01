@@ -42,10 +42,6 @@ public class SpookyStructures {
         NeoForge.EVENT_BUS.register(new MobDropHandler());
     }
 
-    public static ResourceLocation makeID(String ID) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, ID);
-    }
-
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {}
 

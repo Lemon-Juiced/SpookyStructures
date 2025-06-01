@@ -1,38 +1,18 @@
 {
   "itemGroup.spooky_structures.tab": "Spooky Structures",
 
-  "item.spooky_structures.silver_ingot": "Silver Ingot",
-  "item.spooky_structures.silver_nugget": "Silver Nugget",
   "item.spooky_structures.ectoplasm": "Ectoplasm",
   "item.spooky_structures.ectoplasm_infused_silver_ingot": "Ectoplasm Infused Silver Ingot",
-  "item.spooky_structures.raw_silver": "Raw Silver",
-  "item.spooky_structures.silver_smithing_template": "Silver Smithing Template",
+
   "item.spooky_structures.ectoplasm_helmet": "Ectoplasm Helmet",
   "item.spooky_structures.ectoplasm_chestplate": "Ectoplasm Chestplate",
   "item.spooky_structures.ectoplasm_leggings": "Ectoplasm Leggings",
   "item.spooky_structures.ectoplasm_boots": "Ectoplasm Boots",
 
-  "item.spooky_structures.silvered_wooden_sword": "Silvered Wooden Sword",
-  "item.spooky_structures.silvered_stone_sword": "Silvered Stone Sword",
-  "item.spooky_structures.silvered_iron_sword": "Silvered Iron Sword",
-  "item.spooky_structures.silvered_diamond_sword": "Silvered Diamond Sword",
-  "item.spooky_structures.silvered_golden_sword": "Silvered Golden Sword",
-  "item.spooky_structures.silvered_netherite_sword": "Silvered Netherite Sword",
-
+  "tooltip.spooky_structures.ectoplasm_armor": "Full Set Grants Invisibility",
   "item.spooky_structures.spooky_jam": "Spooky Jam",
 
-  "tooltip.spooky_structures.silvered_sword": "Silvered: Deals extra damage to undead mobs.",
-  "tooltip.spooky_structures.applies_to": "All Swords",
-  "tooltip.spooky_structures.ingredients": "Silver Ingot",
-  "tooltip.spooky_structures.upgrade_description": "Silver Upgrade",
-  "tooltip.spooky_structures.base_slot_description": "Base Slot Description",
-  "tooltip.spooky_structures.additions_slot_description": "Additions Slot Description",
-  "tooltip.spooky_structures.ectoplasm_armor": "Full Set Grants Invisibility",
   "tooltip.spooky_structures.spooky_jam": "Spooky Jam 2.0",
 
-  "block.spooky_structures.flesh_block": "Block of Flesh",
-  "block.spooky_structures.silver_block": "Block of Silver",
-  "block.spooky_structures.raw_silver_block": "Block of Raw Silver",
-  "block.spooky_structures.silver_ore": "Silver Ore",
-  "block.spooky_structures.deepslate_silver_ore": "Deepslate Silver Ore"
+  "block.spooky_structures.flesh_block": "Block of Flesh"
 }
